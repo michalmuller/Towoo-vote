@@ -28,13 +28,17 @@ function initialState() {
             name: "Mashed Potatoes",
             img: require("../../resources/mashedPotato.jpg"),
             likes: 0,
-            dislikes: 0
+            dislikes: 0,
+            thumbsUp: false,
+            thumbsDown: false
           },
           {
             name: "Baked Potatoes",
             img: require("../../resources/bakedPotato.jpeg"),
             likes: 0,
-            dislikes: 0
+            dislikes: 0,
+            thumbsUp: false,
+            thumbsDown: false
           }
         ]
       },
@@ -46,13 +50,17 @@ function initialState() {
             name: "Honey Salmon with Asparagus",
             img: require("../../resources/honeySalmon.jpg"),
             likes: 0,
-            dislikes: 0
+            dislikes: 0,
+            thumbsUp: false,
+            thumbsDown: false
           },
           {
             name: "Sweet Miso Cod with Sugar Snap Peas",
             img: require("../../resources/sweetMisoCod.jpg"),
             likes: 0,
-            dislikes: 0
+            dislikes: 0,
+            thumbsUp: false,
+            thumbsDown: false
           }
         ]
       }

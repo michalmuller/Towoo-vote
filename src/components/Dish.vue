@@ -10,21 +10,21 @@
           <img class="dish-img col-lg-5 col-md-6 col-sm-6 col-xs-12" :src="dish.img" alt="dish">
           <div class="likes">
             <div
-              @mouseover="thumbsUp='#85A863'"
-              @mouseleave="thumbsUp='#9D9D9D'"
+              @mouseover="dish.thumbsUp=true"
+              @mouseleave="dish.thumbsUp=false"
               @click="like(index)"
             >
-              <thumb-svg :fillColor="thumbsUp" class="like-img"></thumb-svg>
+              <thumb-svg :fillColor="dish.thumbsUp? '#85A863': '#9D9D9D'" class="like-img"></thumb-svg>
             </div>
             <p class="like-count">{{dish.likes}}</p>
           </div>
           <div class="dislikes">
             <div
-              @mouseover="thumbsDown='#A5665C'"
-              @mouseleave="thumbsDown='#9D9D9D'"
+              @mouseover="dish.thumbsDown=true"
+              @mouseleave="dish.thumbsDown=false"
               @click="dislike(index)"
             >
-              <thumb-svg :fillColor="thumbsDown" class="dislike-img"></thumb-svg>
+              <thumb-svg :fillColor="dish.thumbsDown? '#A5665C': '#9D9D9D'" class="dislike-img"></thumb-svg>
             </div>
             <p class="dislike-count">{{dish.dislikes}}</p>
           </div>
