@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <vote-page></vote-page>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  name: "app"
+};
 </script>
 
 <style>
+@import "../node_modules/flexboxgrid/dist/flexboxgrid.min.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #222222;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 24px;
 }
 </style>
